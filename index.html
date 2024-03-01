@@ -1,33 +1,50 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cinnamon Notes</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+    <h1><center>CinnamonNotes</center></h1>
     <div class="encuesta">
-        <h1><center>Encuesta de usuario</center></h1>
-        <form id="input-form">
+        <h1><center>Por favor, identifíquese</center></h1>
+        <form id="input-form" enctype="multipart/form-data">
             <label for="text-input">Nombre completo:</label>
             <input type="text" id="nombre" placeholder="Introduce nombre completo aquí">
-
             <label for="text-input">Apellido:</label>
             <input type="text" id="apellido" placeholder="Introduce tu apellido aquí">
-
             <label for="email-input">Email:</label>
-            <input type="email" id="email" placeholder="Introduce tu correo electrónico">
-            
-            <label for="text-input">Comentarios:</label>
-            <input type="text" id="comentarios" placeholder="Introduce tu experiencia con esta calculadora">
-
-
-            <a href="notas.html"><button type="button" onclick="enviar()">Enviar</button></a>
-
+            <input type="email" id="email" placeholder="Introduce tu correo electrónico" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+            <button type="button" onclick="obtenerDatosUsuario()" form="input-form">Enviar</button>
         </form>
     </div>
-    <div class="mensajeEncuesta"></div>
-    <script src="manejo.js"></script>
+<div>
+    <div id="datosUser">
+        <h3>Sus datos:</h3>
+    </div>
+    <h3>Agrega una nota aqui</h3>
+    <div id="posteos" >
+        <form id="posts" enctype="multipart/form-data">
+            <label for="text-input">Ingrese un titulo: </label>
+            <input type="text" id="titulo" placeholder="Ingrese un titulo de su nota">
+            <br>
+            <label for="text-input">Ingrese algúna descripción: </label>
+            <input type="text" id="descripcion" placeholder="Descripcion de la nota">
+            <br>
+            <button type="button" onclick="posteo()">Enviar</button>        </form>
+    </div>
+    
+
+    <h3>Tus notas estan aqui</h3>
+    <div id="publicaciones">
+
+    </div>
+</div>
+<script src="manejo.js"></script>
 </body>
 </html>
