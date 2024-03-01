@@ -1,0 +1,98 @@
+/* Estilo para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el encabezado */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo para el contenido principal */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo para los contenedores de sección */
+section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+/* Estilo para los títulos de sección */
+section h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para los formularios */
+form {
+    margin-bottom: 20px;
+}
+
+/* Estilo para las etiquetas de formulario */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Estilo para los campos de entrada de formulario */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo para los botones de formulario */
+/* Estilo para los botones de formulario */
+button[type="button"] {
+    background-color: #e9a01a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+
+
+/* Estilo para las notas */
+.posteo {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para los títulos de las notas */
+.posteo h3 {
+    color: #000000;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para las descripciones de las notas */
+.posteo p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 0;
+}

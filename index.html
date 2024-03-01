@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinnamon Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1><center>CinnamonNotes</center></h1>
+    <div>
+        <h3>Agrega una nota aqui</h3>
+        <div id="posteos" >
+            <form id="posts" enctype="multipart/form-data">
+                <label for="text-input">Ingrese un titulo: </label>
+                <input type="text" id="titulo" placeholder="Ingrese un titulo de su nota">
+                <br>
+                <label for="text-input">Ingrese algúna descripción: </label>
+                <input type="text" id="descripcion" placeholder="Descripcion de la nota">
+                <br>
+                <button type="button" onclick="posteo()">Subir posteo</button>
+            </form>
+        </div>
+        <h3>Tus notas estan aqui</h3>
+        <div id="publicaciones">
+
+        </div>
+    </div>
+<script src="manejo.js"></script>
+</body>
+</html>
