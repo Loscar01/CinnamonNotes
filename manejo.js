@@ -40,3 +40,28 @@ function eliminarPublicacion(idPublicacion) {
 function generarIdUnico() {
     return 'id-' + Math.random().toString(36);
 }
+
+//logica del formulario
+
+function enviar() {
+    const nombre = document.getElementById("nombre").value;
+    const apellido = document.getElementById("apellido").value;
+    const email = document.getElementById("email").value;
+    const comentarios = document.getElementById("comentarios").value;
+
+    const cajaFinal = document.createElement("div");
+    cajaFinal.id = "cajaFinal";
+
+    const mensajeCajaFinal = document.createElement("label");
+    mensajeCajaFinal.textContent = "Sus datos junto con su reseña fueron enviados exitosamente, gracias por usar esta herramienta.";
+
+    cajaFinal.appendChild(mensajeCajaFinal);
+
+    // Obtener el elemento contenedor para la encuesta y agregar la caja final
+    const encuesta = document.querySelector('.mensajeEncuesta');
+    encuesta.appendChild(cajaFinal);
+
+    setTimeout(function() {
+        cajaFinal.style.display = 'none';
+    }, 4000);
+}
